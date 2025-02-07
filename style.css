@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "RubikDistressed-Regular";
+  src: url(RubikDistressed-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +20,7 @@ body {
   align-items: center;
   /* background-color: #44444471; */
   padding: 20px 20px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .logo {
   color: orangered;
@@ -63,7 +67,7 @@ a:active {
   border-radius: 90px;
   position: absolute;
   right: 0;
-  bottom: -35px;
+  bottom: -235px;
   filter: blur(3px);
 }
 .z-g {
@@ -72,7 +76,7 @@ a:active {
   width: 250px;
   height: 250px;
   position: absolute;
-  bottom: -40px;
+  bottom: -240px;
   left: -500px;
   filter: blur(3px);
 }
@@ -82,7 +86,7 @@ a:active {
   border-bottom-right-radius: 0;
   zoom: 60%;
   position: absolute;
-  top: -210px;
+  top: 100px;
   right: 500px;
   filter: blur(3px);
 }
@@ -93,31 +97,50 @@ a:active {
   height: 20px;
   border-radius: 25px;
   position: absolute;
-
+  top: 185px;
   right: 265px;
   filter: blur(3px);
 }
 
 .main-container {
   padding-left: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 70px;
+  padding-top: 45px;
   height: 400px;
 }
-
+.main-container-box {
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1; */
+  margin-bottom: 100px;
+}
 .HOME {
+  font-family: "RubikDistressed-Regular";
   text-transform: uppercase;
-  font-size: 60px;
-  line-height: 75px;
-  font-weight: bold;
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: 900;
   margin-bottom: 30px;
   color: #fefefe;
+
+  z-index: -10;
+  column-gap: 5px;
+  columns: 2;
+
+  /* back of text */
+  background-image: url(https://wallpapers.com/images/high/mix-color-blue-pink-and-red-cmcmdefefj0wov6p.webp);
+
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .description {
   font-size: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   color: #fefefe;
 }
 .buttons {
@@ -138,6 +161,10 @@ button {
   font-weight: bold;
   text-align: start;
   text-transform: uppercase;
+}
+
+p {
+  z-index: 999;
 }
 
 .call-me {
@@ -212,7 +239,8 @@ img {
   font-size: 25px;
 }
 span {
-  font-weight: bold;
+  font-size: 130px;
+  letter-spacing: 10px;
 }
 .old-container {
   /* background-color: #7272726f; */
@@ -243,19 +271,22 @@ footer p:first-child {
 .blue {
   background-color: #26ffff;
   filter: blur(270px);
-  top: -250px;
+  top: -400px;
   left: 20px;
+  z-index: 1;
 }
 
 .purpol {
   background-color: #db4bff;
   filter: blur(250px);
-  top: -250px;
+  top: -400px;
   right: 20px;
+  z-index: 1;
 }
 .red {
   background-color: #ff2626;
   filter: blur(270px);
-  top: -250px;
+  top: -400px;
   left: 450px;
+  z-index: 1;
 }
