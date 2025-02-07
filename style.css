@@ -1,6 +1,27 @@
+@font-face {
+  font-family: "RubikDistressed-Regular";
+  src: url(RubikDistressed-Regular.ttf);
+}
 
 .rubik-distressed-regular {
   font-family: "Rubik Distressed", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.monoton-regular {
+  font-family: "Monoton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scope-one-regular {
+  font-family: "Scope One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -37,10 +58,12 @@ a:active {
   padding: 5px 10px;
   margin-right: 20px;
   text-decoration: none;
-  font-weight: bold;
+
+  font-family: "Monoton";
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 25px;
   color: #fefefe;
+
   transition: background-color 0.5s ease-in-out, transform 0.5s ease;
 }
 .navigation a:hover {
@@ -143,7 +166,9 @@ a:active {
 }
 .description {
   font-size: 20px;
+  font-family: "Scope One";
   margin-bottom: 50px;
+  font-weight: 200;
   color: #fefefe;
 }
 .buttons {
@@ -152,7 +177,7 @@ a:active {
 }
 button {
   color: aliceblue;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding: 10px;
   padding-right: 100px;
@@ -164,10 +189,6 @@ button {
   font-weight: bold;
   text-align: start;
   text-transform: uppercase;
-}
-
-p {
-  z-index: 999;
 }
 
 .call-me {
@@ -206,7 +227,6 @@ img {
   border-radius: 30px;
   /* background-color: #030109; */
   background: linear-gradient(to bottom, #414141 0%, #000000 100%);
-
   border-bottom: none;
   color: aliceblue;
 }
@@ -235,11 +255,17 @@ img {
 }
 
 .info-text-1 {
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 40px;
+  font-family: "Bungee Spice";
 }
 .info-text-2 {
-  font-size: 25px;
+  font-size: 30px;
+  line-height: 40px;
+  columns: 3;
+  column-gap: 20px;
+  text-align: center;
+  font-family: "Scope One";
 }
 span {
   font-size: 130px;
@@ -279,7 +305,7 @@ footer p:first-child {
   z-index: 1;
 }
 
-.purpol {
+.purple {
   background-color: #db4bff;
   filter: blur(250px);
   top: -400px;
