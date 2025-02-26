@@ -37,6 +37,16 @@ body {
   margin: 0 auto;
   background-color: #030109;
   position: relative;
+  /* 
+  BACKGROUND IMG===>
+  */
+  background-image: url(https://wallpapercave.com/wp/wp4254882.jpg);
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: repeat-x;
+}
+.background {
 }
 
 .header {
@@ -69,8 +79,9 @@ a:active {
 
   transition: background-color 0.5s ease-in-out, color 0.5s, transform 0.5s ease;
 }
-.navigation a:hover {
-  background-color: #000;
+.navigation a:hover,
+.navigation a:visited {
+  background-color: hsla(0, 0%, 0%, 0.35);
   color: #ff7900;
   transform: scale(1.1);
 }
@@ -178,7 +189,7 @@ button {
   color: aliceblue;
   font-size: 22px;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   padding-right: 100px;
   padding-left: 20px;
   border-radius: 50px;
@@ -228,8 +239,11 @@ button {
   align-items: center;
 
   border-radius: 25px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 
-  background: linear-gradient(to bottom, #414141 0%, #000000 100%);
+  background: linear-gradient(to bottom, #414141 0%, #00000000 100%);
+
   border-bottom: none;
   color: aliceblue;
 }
@@ -313,17 +327,13 @@ box--->
 */
 .box-container {
   justify-self: center;
-  margin-bottom: 300px;
-}
-.back {
-  background-color: #fff;
-  border-radius: 44px;
+  margin-bottom: 200px;
 
   /* grid */
   display: grid;
-  gap: 50px;
   grid-template-columns: 1fr 1fr;
 }
+
 .next {
   grid-column: 1/2;
   color: hsl(241, 100%, 89%);
@@ -334,20 +344,18 @@ box--->
   );
   text-align: center;
 
-  width: 500px;
-  height: 100%;
+  width: 600px;
+
   border-radius: 44px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .box-container h3 {
-  font-size: 50px;
-
-  margin-bottom: 20px;
-  font-size: 50px;
+  margin-bottom: 40px;
+  font-size: 60px;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 40px;
   color: #000000;
 }
 .num {
@@ -369,24 +377,23 @@ box--->
 
 .box-container h2 {
   color: hsl(221, 100%, 96%);
-  margin-bottom: 20px;
-  font-size: 50px;
-  padding-top: 20px;
+
+  font-size: 60px;
+  padding-top: 40px;
 }
 .box-container p {
   display: inline-block;
   font-size: 26px;
   text-align: center;
-  margin: 0 10px;
 }
 .info-text-box {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   color: #f5f5f5d0;
+  margin: 30px 50px;
 }
 .box-container span {
   color: hsl(221, 100%, 96%);
   font-weight: bold;
-  font-size: 100px;
 }
 .main {
   grid-column: 2/3;
@@ -394,9 +401,12 @@ box--->
 
 .aside {
   justify-items: center;
+  width: 600px;
 
-  height: 600px;
-
+  background-color: #fff;
+  border-radius: 44px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   font-weight: bold;
 }
 .aside span {
@@ -444,7 +454,7 @@ box--->
   padding: 17px 73px;
   background-color: #f89c2a;
   color: #fff;
-  font-size: 33px;
+  font-size: 32px;
   font-weight: bold;
   border-radius: 999px;
   border: none;
@@ -454,9 +464,115 @@ box--->
   background-color: #f64c18;
   box-shadow: 0 0 30px -2px rgba(0, 0, 0, 0.5);
   justify-self: center;
+  transform: scale(0.97);
 }
 
 .box-icon {
   width: 25px;
-  height: 25spx;
+  height: 25px;
+}
+
+/* RELAITED TO CARD---> */
+.card {
+  justify-self: center;
+  align-items: center;
+  /* GRID */
+  display: grid;
+  grid-template-columns: 1400px;
+  grid-template-rows: 200px 350px 120px;
+  position: relative;
+  margin-bottom: 200px;
+}
+.back-orange {
+  background-image: url(https://www.vecteezy.com/vector-art/53088465-minimal-abstract-brown-color-wide-banner-with-geometric-eps10-vectorstripe-line-art-design-modern-futuristic-design-background);
+
+  background-size: cover;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+  width: 1400px;
+  height: 200px;
+  background: linear-gradient(to top, #f89c2a 0%, #f64c18 100%);
+}
+.my-info {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.558);
+  font-size: 52px;
+  font-weight: bold;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+  width: 1400px;
+  height: 350px;
+  z-index: 999;
+  text-align: center;
+}
+.my-info span {
+  color: #000000;
+  font-size: 52px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+.name {
+  margin-top: 180px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.iran {
+  font-weight: normal;
+  color: #00000074;
+  text-transform: uppercase;
+}
+
+.my-profile {
+  border-radius: 999px;
+  width: 300px;
+  height: 300px;
+  border: 20px solid #fff;
+  /* FLOOT */
+
+  position: absolute;
+  top: 32px;
+  left: 530px;
+}
+
+.social-info {
+  background-color: #fffffff1;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+  width: 1400px;
+  height: 120px;
+
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.social-info svg {
+  width: 100px;
+  height: 100px;
+}
+/* .social-info a:link,
+.social-info a:active {
+  text-decoration: none;
+
+  border-radius: 999px;
+
+  transition: background-color 0.5s ease-in-out, color 0.5s, transform 0.5s ease;
+}
+.social-info a:hover,
+.social-info a:visited {
+  transform: scale(1.1);
+} */
+
+.social-info a:link,
+.social-info a:active {
+  transition: transform 0.5s ease;
+}
+.social-info a:hover,
+.social-info a:visited {
+  transform: scale(1.1);
 }
