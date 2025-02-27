@@ -44,13 +44,13 @@ body {
   background-position: top;
   background-size: 75%;
 
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
 }
 .desktop {
   display: block;
 }
 .mobile {
-  display: none;
+  display: block;
 }
 @media only screen and (max-width: 896px) {
   .mobile {
@@ -116,6 +116,7 @@ img {
   margin-top: 70px;
   gap: 30px 50px;
   position: relative;
+  margin-right: 300px;
 }
 .z-g,
 .red-g,
@@ -165,12 +166,9 @@ img {
 }
 
 .main-container {
-  margin: 0 30px;
-  margin-bottom: 400px;
-  margin-top: 45px;
-  display: flex;
-  justify-content: space-between;
-  height: 400px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .HOME {
@@ -622,7 +620,9 @@ box--->
   display: grid;
   grid-template-columns: 812px;
   margin: 0 0;
-  margin-bottom: 1000px;
+}
+.mobile .box-container {
+  margin-bottom: 120px;
 }
 .mobile .HOME {
   line-height: normal;
@@ -633,8 +633,10 @@ box--->
 }
 .mobile .pictures {
   zoom: 110%;
-  column-gap: 20px;
+  column-gap: 35px;
   justify-self: center;
+  margin-right: 0;
+  margin-bottom: 100px;
 }
 .mobile .about-me {
   grid-template-columns: 1fr 4fr;
