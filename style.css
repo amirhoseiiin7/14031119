@@ -625,7 +625,7 @@ box--->
 .mobile {
   width: 600px;
   justify-self: center;
-  zoom: 70%;
+  
 }
 .mobile .main-container {
   display: grid;
