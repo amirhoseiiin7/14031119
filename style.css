@@ -53,7 +53,7 @@ body {
   display: block;
 }
 .mobile {
-  display: none;
+  display:none ;
 }
 @media only screen and (max-width: 600px) {
   .mobile {
@@ -623,23 +623,24 @@ box--->
  mobile page---> 
  */
 .mobile {
-  width: 100%;
-
+  width: 600px;
   justify-self: center;
+  zoom: 70%;
 }
 .mobile .main-container {
   display: grid;
   grid-template-columns: 812px;
   margin: 0 0;
+  zoom: 74%;
 }
 .mobile .box-container {
   margin-bottom: 120px;
 }
 .mobile .HOME {
   line-height: normal;
-  font-size: 52px;
+  font-size: 58px;
   span {
-    font-size: 92px;
+    font-size: 95px;
   }
 }
 .mobile .pictures {
@@ -662,8 +663,8 @@ box--->
 }
 .mobile .my-pic {
   justify-self: center;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   grid-column: 1/-1;
 }
 .mobile .icon {
@@ -675,6 +676,8 @@ box--->
 
 .mobile .box-container {
   grid-template-columns: 1fr;
+  zoom: 91%;
+  margin: 200px 30px;
 }
 .mobile .next {
   border-bottom-left-radius: 0;
@@ -697,6 +700,9 @@ box--->
 }
 .mobile .card {
   grid-template-rows: 170px 250px 70px;
+  zoom: 91%;
+  margin: 0 30px;
+  margin-bottom: 200px;
 }
 
 .mobile .back-orange {
