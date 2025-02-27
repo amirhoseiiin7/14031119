@@ -50,10 +50,10 @@ body {
   background-attachment: fixed;
 }
 .desktop {
-  display: none;
+  display: block;
 }
 .mobile {
-  display: block;
+  display: none;
 }
 @media only screen and (max-width: 300px) {
   .mobile {
