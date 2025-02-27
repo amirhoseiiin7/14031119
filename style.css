@@ -32,7 +32,9 @@
 }
 body {
   font-family: "Inter", serif;
-  width: 1512px;
+  max-width: 1512px;
+  width: 100%;
+
   height: auto;
   margin: 0 auto;
   background-color: #030109;
@@ -41,16 +43,17 @@ body {
   BACKGROUND IMG===>
   */
   background-image: url(https://wallpapercave.com/wp/wp4254882.jpg);
-  background-position: top;
-  background-size: 75%;
 
+  background-size: 70%;
+  background-position: top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .desktop {
   display: block;
 }
 .mobile {
-  display: none;
+  display: block;
 }
 @media only screen and (max-width: 896px) {
   .mobile {
@@ -105,14 +108,16 @@ img {
   object-fit: cover;
 }
 .pictures {
+  /* height: 250px; */
 
+  /* zoom: 100%; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
   margin-top: 70px;
-  margin-right:30px;
+  margin-right: 40px;
   gap: 30px 50px;
   position: relative;
 }
@@ -167,18 +172,23 @@ img {
   margin-bottom: 200px;
   display: grid;
   grid-template-columns: auto auto;
+  zoom: 90%;
+}
+
+.main-container-box {
+  margin-left: 40px;
 }
 
 .HOME {
   font-family: "Bungee Spice";
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 72px;
   line-height: 120px;
   font-weight: 900;
   margin-bottom: 80px;
 
   z-index: -10;
-  column-gap: 5px;
+
   columns: 2;
 }
 .description {
