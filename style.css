@@ -55,7 +55,7 @@ body {
 .mobile {
   display: none;
 }
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 600px) {
   .mobile {
     display: block;
   }
@@ -118,7 +118,7 @@ img {
   justify-items: center;
   margin-top: 70px;
   margin-right: 40px;
-  gap: 30px 50px;
+  gap: 0 0;
   position: relative;
 }
 .z-g,
@@ -147,6 +147,7 @@ img {
   border-bottom-left-radius: 125px;
   width: 280px;
   height: 250px;
+  align-self: start;
 }
 
 .white-g {
@@ -155,6 +156,8 @@ img {
   width: 175px;
   height: 150px;
   left: -50px;
+  align-self: center;
+  justify-self: ;
 }
 
 .point {
@@ -163,8 +166,8 @@ img {
   height: 28px;
   border-radius: 25px;
   position: absolute;
-  top: 217px;
-  left: 242px;
+  top: 225px;
+  left: 250px;
   filter: blur(3px);
 }
 
@@ -620,7 +623,7 @@ box--->
  mobile page---> 
  */
 .mobile {
-  max-width: 812px;
+  width: 100%;
 
   justify-self: center;
 }
