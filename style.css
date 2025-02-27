@@ -159,12 +159,12 @@ img {
 
 .point {
   background-color: #ff9131e0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 25px;
   position: absolute;
-  top: 210px;
-  left: 235px;
+  top: 215px;
+  left: 240px;
   filter: blur(3px);
 }
 
